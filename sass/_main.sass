@@ -1,0 +1,64 @@
+.main
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        padding: 100px 16px
+        padding-bottom: 20px
+    &-text
+        display: flex
+        flex-direction: column
+        &__title
+            margin-top: 24px
+            max-width: 475px
+            font-weight: 900
+            font-size: 32px
+            line-height: 50px
+            color: #ffffff
+        &__button
+            margin-top: 55px
+            width: 100%
+    &-content
+        &__img
+            width: 500px
+
+
+@media (max-width: 1024px)
+    .main
+        &-text
+            &__title
+                width: 475px
+        &-content
+            &__img
+                width: 450px
+
+
+@media (max-width: 768px)
+    .main
+        &-wrap
+            padding-top: 100px
+            flex-direction: column
+            text-align: center
+        &-text
+            margin-top: 20px
+            &__button
+                margin-top: 50px
+        &-content
+            order: -1
+
+@media (max-width: 425px)
+    .main
+        &-wrap
+            padding-bottom: 80px
+        &-text
+            margin-top: 40px
+            &__title
+                width: 300px
+                font-size: 28px
+                line-height: 40px
+            &__button
+                margin-top: 40px
+        &-content
+            &__img
+                width: 285px
