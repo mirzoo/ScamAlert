@@ -1,0 +1,2 @@
+# ScamAlert
+blocker for ios 
